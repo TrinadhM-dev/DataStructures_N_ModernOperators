@@ -54,3 +54,25 @@ console.log(guests);
 const guestsers = restaurant.numGuests ?? 10;
 console.log(guestsers,"nullish");
 
+/**
+ * Logical operator 
+ * 
+ * 
+ * 
+ */
+
+//for the example we have creating 2 objects
+
+const res1 = {
+  name:'Trinad',
+  numGuests : 20,
+}
+const res2 = {
+  name:'Tri',
+  Owner:'Roger Izzah'
+}
+//if the first value i.e., res1.numGuests is truthy value it immediately returns the first value & second value will not be evaluated.
+
+
+res2.numOfGuests = res1.numGuests || 10; 
+console.log(res2); 
